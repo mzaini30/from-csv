@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-npm i go-csv
+npm i csvv
 ```
 
 ## Type Definition
@@ -17,7 +17,7 @@ export { FromCSV as default };
 ## Example
 
 ```typescript
-import FromCSV from "go-csv";
+import FromCSV from "csvv";
 
 const data = `name|address|hobby
 zen|samarinda|programming
@@ -31,11 +31,11 @@ console.log(FromCSV(data, delimiters));
 
 Result
 
-```
+```json
 [
-  { name: 'zen', address: 'samarinda', hobby: 'programming' },
-  { name: 'yani', address: 'samarinda', hobby: 'cooking' },
-  { name: 'aira', address: 'samarinda', hobby: 'writing' },
-  { name: 'maryam', address: 'samarinda', hobby: 'playing' }
+  { "name": "zen", "address": "samarinda", "hobby": "programming" },
+  { "name": "yani", "address": "samarinda", "hobby": "cooking" },
+  { "name": "aira", "address": "samarinda", "hobby": "writing" },
+  { "name": "maryam", "address": "samarinda", "hobby": "playing" }
 ]
 ```

@@ -1,5 +1,5 @@
 {
-  "name": "from-csv",
+  "name": "go-csv",
   "version": "1.0.0",
   "description": "Convert CSV to JSON",
   "main": "dist/index.cjs",

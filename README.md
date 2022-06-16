@@ -1,4 +1,6 @@
-# From CSV
+# CSVV
+
+Convert CSV to JSON
 
 ## Installation
 

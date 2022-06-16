@@ -1,5 +1,5 @@
 {
-  "name": "go-csv",
+  "name": "csvv",
   "version": "1.0.2",
   "description": "Convert CSV to JSON",
   "main": "dist/index.cjs",
@@ -22,8 +22,7 @@
     "url": "git+https://github.com/mzaini30/from-csv.git"
   },
   "keywords": [
-    "github",
-    "template"
+    "csv", "json"
   ],
   "author": "Zen",
   "license": "MIT",

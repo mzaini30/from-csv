@@ -1,6 +1,6 @@
 {
   "name": "from-csv",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Convert CSV to JSON",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",

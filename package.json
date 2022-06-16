@@ -11,6 +11,7 @@
     "prepublishOnly": "npm run build",
     "prettier": "prettier --write src/index.ts"
   },
+  "files": ["dist"],
   "simple-git-hooks": {
     "pre-commit": "npm run prettier"
   },

@@ -1,0 +1,26 @@
+{
+  "name": "new",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "release": "bumpp --tag --commit --push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mzaini30/new.git"
+  },
+  "keywords": [
+    "github",
+    "template"
+  ],
+  "author": "Zen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mzaini30/new/issues"
+  },
+  "homepage": "https://github.com/mzaini30/new#readme",
+  "devDependencies": {
+    "bumpp": "^7.1.1"
+  }
+}

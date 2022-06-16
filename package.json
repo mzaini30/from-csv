@@ -1,6 +1,6 @@
 {
   "name": "csvv",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert CSV to JSON",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -22,7 +22,8 @@
     "url": "git+https://github.com/mzaini30/from-csv.git"
   },
   "keywords": [
-    "csv", "json"
+    "csv",
+    "json"
   ],
   "author": "Zen",
   "license": "MIT",

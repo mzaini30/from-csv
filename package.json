@@ -1,14 +1,22 @@
 {
-  "name": "new",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "name": "from-csv",
+  "version": "0.0.0",
+  "description": "Convert CSV to JSON",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "release": "bumpp --tag --commit --push"
+    "release": "bumpp --tag --commit --push",
+    "build": "pkgroll",
+    "prepublishOnly": "npm run build",
+    "prettier": "prettier --write src/index.ts"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run prettier"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mzaini30/new.git"
+    "url": "git+https://github.com/mzaini30/from-csv.git"
   },
   "keywords": [
     "github",
@@ -17,10 +25,12 @@
   "author": "Zen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mzaini30/new/issues"
+    "url": "https://github.com/mzaini30/from-csv/issues"
   },
-  "homepage": "https://github.com/mzaini30/new#readme",
+  "homepage": "https://github.com/mzaini30/from-csv#readme",
   "devDependencies": {
-    "bumpp": "^7.1.1"
+    "bumpp": "^7.1.1",
+    "pkgroll": "^1.3.1",
+    "prettier": "^2.7.1"
   }
 }

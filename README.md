@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-npm i from-csv
+npm i go-csv
 ```
 
 ## Type Definition
@@ -17,7 +17,7 @@ export { FromCSV as default };
 ## Example
 
 ```typescript
-import FromCSV from "from-csv";
+import FromCSV from "go-csv";
 
 const data = `name|address|hobby
 zen|samarinda|programming

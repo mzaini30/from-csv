@@ -1,10 +1,12 @@
-import FromCSV from "./index";
+import csvv from "./index";
 
-const data = `name|address|hobby
+const data = `
+name|address||hobby
 zen|samarinda|programming
 yani|samarinda|cooking
 aira|samarinda|writing
-maryam|samarinda|playing`;
+maryam|samarinda|playing
+`;
 const delimiters = "|";
 
-console.log(FromCSV(data, delimiters));
+console.log(csvv(data, delimiters));

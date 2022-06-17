@@ -1,5 +1,5 @@
-export default function FromCSV(csv: string, delimiters = ","): any {
-  const splitLine: string[] = csv.split("\n");
+export default function csvv(csv: string, delimiters = ","): any {
+  const splitLine = csv.split("\n").filter(x => x)
 
   let content: any = [];
   let headers: string[] = [];
@@ -7,11 +7,11 @@ export default function FromCSV(csv: string, delimiters = ","): any {
   let newArray: any = [];
 
   for (const index in splitLine) {
-    const n: number = +index;
+    const n = +index;
     if (n == 0) {
-      headers = splitLine[n].split(delimiters);
+      headers = splitLine[n].split(delimiters).filter(x => x);
     } else {
-      content.push(splitLine[n].split(delimiters));
+      content.push(splitLine[n].split(delimiters).filter(x => x));
     }
   }
 

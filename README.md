@@ -11,15 +11,15 @@ npm i csvv
 ## Type Definition
 
 ```typescript
-declare function FromCSV(csv: string, delimiters?: string): any;
+declare function csvv(csv: string, delimiters?: string): any;
 
-export { FromCSV as default };
+export { csvv as default };
 ```
 
 ## Example
 
 ```typescript
-import FromCSV from "csvv";
+import csvv from "csvv";
 
 const data = `name|address|hobby
 zen|samarinda|programming
@@ -28,7 +28,7 @@ aira|samarinda|writing
 maryam|samarinda|playing`;
 const delimiters = "|";
 
-console.log(FromCSV(data, delimiters));
+console.log(csvv(data, delimiters));
 ```
 
 Result

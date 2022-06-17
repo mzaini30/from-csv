@@ -1,5 +1,5 @@
 export default function csvv(csv: string, delimiters = ","): any {
-  const splitLine = csv.split("\n").filter(x => x)
+  const splitLine = csv.split("\n").filter((x) => x);
 
   let content: any = [];
   let headers: string[] = [];
@@ -9,9 +9,9 @@ export default function csvv(csv: string, delimiters = ","): any {
   for (const index in splitLine) {
     const n = +index;
     if (n == 0) {
-      headers = splitLine[n].split(delimiters).filter(x => x);
+      headers = splitLine[n].split(delimiters).filter((x) => x);
     } else {
-      content.push(splitLine[n].split(delimiters).filter(x => x));
+      content.push(splitLine[n].split(delimiters).filter((x) => x));
     }
   }
 

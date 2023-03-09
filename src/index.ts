@@ -9,9 +9,9 @@ export default function csvv(csv: string, delimiters = ","): any {
   for (const index in splitLine) {
     const n = +index;
     if (n == 0) {
-      headers = splitLine[n].split(delimiters).filter((x) => x);
+      headers = splitLine[n].split(delimiters).filter((x) => x).map(x => x.replace("\r", ""))
     } else {
-      content.push(splitLine[n].split(delimiters).filter((x) => x));
+      content.push(splitLine[n].split(delimiters).filter((x) => x).map(x => x.replace("\r", "")))
     }
   }
 

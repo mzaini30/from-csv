@@ -5,15 +5,7 @@ Convert CSV to JSON
 ## Installation
 
 ```bash
-npm i csvv
-```
-
-## Type Definition
-
-```typescript
-declare function csvv(csv: string, delimiters?: string): any;
-
-export { csvv as default };
+pnpm i csvv
 ```
 
 ## Example
